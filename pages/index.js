@@ -88,7 +88,7 @@ const Home = () => (
           <NextLink href="https://www.youtube.com/channel/UC-Xu_hPhWucbV06VeyyIZig" passHref>
             <Link target="_blank">Channel name</Link>
           </NextLink>
-          &quot; beginner youtuber
+          &quot;
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
