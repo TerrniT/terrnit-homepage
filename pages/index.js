@@ -34,10 +34,11 @@ const Home = () => (
         mb={6}
         p={3}
         textAlign="center"
+        fontSize={13}
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        «The design is not just what it looks like.  The design is how it works»  @Steve Jobs
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -45,7 +46,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Gleb Kotovsky
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Web Developer / Designer / Beginner YouTuber</p>
         </Box>
         <Box
           flexShrink={0}
@@ -79,21 +80,15 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
+          Some text that i will come up with soon {' '}
           <NextLink href="/works/inkdrop" passHref scroll={false}>
             <Link>Inkdrop</Link>
           </NextLink>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
+          . I post content to market my products and my YouTube channel is called &quot;
+          <NextLink href="https://www.youtube.com/channel/UC-Xu_hPhWucbV06VeyyIZig" passHref>
+            <Link target="_blank">Channel name</Link>
           </NextLink>
-          &quot; has more than 100k subscribers.
+          &quot; beginner youtuber
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -109,39 +104,36 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>2003</BioYear>
+          Born in Ekaterinburg
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2018</BioYear>
+          I first got acquainted with IT. I took an introductory 
+          course on game development with Python
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2019 to present </BioYear>
+          I study at college with a degree in programming in computer systems.
         </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
-        </BioSection>
+        {/* <BioSection>
+          <BioYear>20XX Bio-section template</BioYear>
+        </BioSection> */}
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          I really love
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
+          Coffee, Chill lo-fi hip hop music,{' '}
+          <Link href="https://www.behance.net/dfe5d201" target="_blank">
+            Design
           </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
+          , Study,{' '}
+          <Link href="https://github.com/TerrniT" target="_blank">
+            Codding
           </Link>
-          , Leica, Machine Learning
         </Paragraph>
       </Section>
 
@@ -151,46 +143,35 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/terrnit" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @terrnit
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://vk.com/princess_slayrr" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @inkdrop_app (English)
+                @princess_slayrr (VK)
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link href="https://instagram.com/princess_slayrr" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @craftzdog
+                @princess_slayrr 
               </Button>
             </Link>
           </ListItem>
