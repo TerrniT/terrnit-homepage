@@ -8,8 +8,6 @@ import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 const Works = () => (
   <Layout title="Works">
     <Container>
-      <Divider my={6} />
-
       <Heading as="h3" fontSize={20} mb={4}>
         Works
       </Heading>
