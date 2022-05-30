@@ -32,8 +32,7 @@ const Home = () => (
       <Box
         borderRadius="lg"
         mb={6}
-        p={3}
-        pt={10}
+        p={4}
         textAlign="center"
         fontSize={12}
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
