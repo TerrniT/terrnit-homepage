@@ -1,8 +1,9 @@
 {
-  "name": "craftzdog-homepage",
-  "version": "1.0.0",
+  "name": "terrnit-homepage",
+  "version": "1.0.5",
   "description": "terrnit's website",
   "scripts": {
+    "st-ild": "next build && next start",
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
