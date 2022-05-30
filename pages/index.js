@@ -110,18 +110,15 @@ const Home = () => (
           course on game development with Python
         </BioSection>
         <BioSection>
-          <BioYear>2019-2023</BioYear>
+          <BioYear>2019</BioYear>
           I study at college with a degree in programming in computer systems.
         </BioSection>
-        {/* <BioSection>
-          <BioYear>20XX Bio-section template</BioYear>
-        </BioSection> */}
       </Section>
 
-      # Create a new section
+      {/* # Create a new section */}
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          P
+          Projects
         </Heading>
         <BioSection>
           <BioYear>2003</BioYear>
