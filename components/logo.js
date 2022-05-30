@@ -32,10 +32,10 @@ const Logo = () => {
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
-            fontWeight="bold"
+            fontWeight="semi-bold"
             ml={3}
           >
-            omgiloveyousomuuch
+            omgiloveyousomuch
           </Text>
         </LogoBox>
       </a>

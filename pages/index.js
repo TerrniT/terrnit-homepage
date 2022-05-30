@@ -33,12 +33,14 @@ const Home = () => (
         borderRadius="lg"
         mb={6}
         p={3}
+        pt={10}
         textAlign="center"
-        fontSize={13}
+        fontSize={12}
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        «The design is not just what it looks like.  The design is how it works»  @Steve Jobs
+        «The design is not just what it looks like. The design is how it works»  
+        @Steve Jobs
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -46,7 +48,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Gleb Kotovsky
           </Heading>
-          <p>Web Developer / Designer / Beginner YouTuber</p>
+          <p>Web Developer / Designer / YouTuber</p>
         </Box>
         <Box
           flexShrink={0}
@@ -82,11 +84,7 @@ const Home = () => (
         <Paragraph>
           Some text that i will come up with soon {' '}
           <NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
-          </NextLink>
-          . I post content to market my products and my YouTube channel is called &quot;
-          <NextLink href="https://www.youtube.com/channel/UC-Xu_hPhWucbV06VeyyIZig" passHref>
-            <Link target="_blank">Channel name</Link>
+            <Link>TestLink</Link>
           </NextLink>
           &quot;
         </Paragraph>
@@ -113,7 +111,30 @@ const Home = () => (
           course on game development with Python
         </BioSection>
         <BioSection>
-          <BioYear>2019 to present </BioYear>
+          <BioYear>2019-2023</BioYear>
+          I study at college with a degree in programming in computer systems.
+        </BioSection>
+        {/* <BioSection>
+          <BioYear>20XX Bio-section template</BioYear>
+        </BioSection> */}
+      </Section>
+
+      # Create a new section
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          P
+        </Heading>
+        <BioSection>
+          <BioYear>2003</BioYear>
+          Born in Ekaterinburg
+        </BioSection>
+        <BioSection>
+          <BioYear>2018</BioYear>
+          I first got acquainted with IT. I took an introductory 
+          course on game development with Python
+        </BioSection>
+        <BioSection>
+          <BioYear>2019-2023</BioYear>
           I study at college with a degree in programming in computer systems.
         </BioSection>
         {/* <BioSection>
@@ -132,7 +153,7 @@ const Home = () => (
           </Link>
           , Study,{' '}
           <Link href="https://github.com/TerrniT" target="_blank">
-            Codding
+            Code 
           </Link>
         </Paragraph>
       </Section>
@@ -177,7 +198,7 @@ const Home = () => (
           </ListItem>
         </List>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             href="https://www.youtube.com/devaslife"
             title="Dev as Life"
@@ -192,7 +213,7 @@ const Home = () => (
           >
             A Markdown note-taking app
           </GridItem>
-        </SimpleGrid>
+        </SimpleGrid> */}
 
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
