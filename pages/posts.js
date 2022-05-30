@@ -16,7 +16,7 @@ const Posts = () => (
   <Layout title="Posts">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Popular Posts
+        YouTube
       </Heading>
 
       <Section delay={0.1}>
@@ -46,6 +46,9 @@ const Posts = () => (
 
       <Section delay={0.3}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
+          <Heading as="h3" fontSize={20} mb={4}>
+            Blog Posts
+          </Heading>
           <GridItem
             title="How I’ve Attracted The First 500 Paid Users For My SaaS That Costs $5/mo"
             thumbnail={thumb500PaidUsers}
