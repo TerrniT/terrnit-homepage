@@ -66,7 +66,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/footprint.png"
               alt="Profile image"
               borderRadius="full"
               width="100%"
@@ -130,7 +130,7 @@ const Home = () => (
           course on game development with Python
         </BioSection>
         <BioSection>
-          <BioYear>2019-2023</BioYear>
+          <BioYear>2019</BioYear>
           I study at college with a degree in programming in computer systems.
         </BioSection>
         {/* <BioSection>
