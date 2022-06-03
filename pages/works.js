@@ -20,6 +20,7 @@ const Works = () => (
             A Markdown note-taking app with 100+ plugins, cross-platform and
             encrypted data sync support
           </WorkGridItem>
+          
         </Section>
       </SimpleGrid>
 

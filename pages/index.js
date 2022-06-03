@@ -9,36 +9,44 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra
+  chakra,
+  Image
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-//import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-//import thumbYouTube from '../public/images/links/youtube.png'
-//import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import Image from 'next/image'
+import ImageNext from 'next/image'
+//import headerBackground from '../public/images/contents/header-bg.jpg'
 
-const ProfileImage = chakra(Image, {
+const ProfileImage = chakra(ImageNext, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
 const Home = () => (
   <Layout>
     <Container>
+      <Box>
+        <Image
+          src='gibbresh.png'
+          boxSize={480}
+          fallbackSrc='https://via.placeholder.com/150'
+          alt='empty' 
+          mb={6}
+          />
+      </Box>
       <Box
         borderRadius="lg"
         mb={6}
-        p={4}
+        p={3.5}
         textAlign="center"
         fontSize={12}
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        css={{ backdropFilter: 'blur(10px)' }}
+        css={{ backdropFilter: 'blur(15px)' }}
       >
-        «The design is not just what it looks like. The design is how it works»  
+        «The design is not just what it looks like. The design is how it works»
         @Steve Jobs
       </Box>
 
@@ -106,7 +114,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2018</BioYear>
-          I first got acquainted with IT. I took an introductory 
+          I first got acquainted with IT. I took an introductory
           course on game development with Python
         </BioSection>
         <BioSection>
@@ -126,7 +134,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2018</BioYear>
-          I first got acquainted with IT. I took an introductory 
+          I first got acquainted with IT. I took an introductory
           course on game development with Python
         </BioSection>
         <BioSection>
@@ -149,7 +157,7 @@ const Home = () => (
           </Link>
           , Study,{' '}
           <Link href="https://github.com/TerrniT" target="_blank">
-            Code 
+            Code
           </Link>
         </Paragraph>
       </Section>
@@ -188,7 +196,7 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @princess_slayrr 
+                @princess_slayrr
               </Button>
             </Link>
           </ListItem>
