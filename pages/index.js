@@ -33,7 +33,7 @@ const Home = () => (
           src='gibbresh.png'
           boxSize={480}
           fallbackSrc='https://via.placeholder.com/150'
-          alt='empty' 
+          alt='error 404: doesnt load properly' 
           mb={6}
           />
       </Box>

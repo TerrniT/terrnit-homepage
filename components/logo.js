@@ -35,7 +35,7 @@ const Logo = () => {
             fontWeight="semi-bold"
             ml={3}
           >
-            omgiloveyousomuch
+            TerrniT 
           </Text>
         </LogoBox>
       </a>
