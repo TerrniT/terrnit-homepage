@@ -123,28 +123,8 @@ const Home = () => (
         </BioSection>
       </Section>
 
-      {/* # Create a new section */}
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Projects
-        </Heading>
-        <BioSection>
-          <BioYear>2003</BioYear>
-          Born in Ekaterinburg
-        </BioSection>
-        <BioSection>
-          <BioYear>2018</BioYear>
-          I first got acquainted with IT. I took an introductory
-          course on game development with Python
-        </BioSection>
-        <BioSection>
-          <BioYear>2019</BioYear>
-          I study at college with a degree in programming in computer systems.
-        </BioSection>
-        {/* <BioSection>
-          <BioYear>20XX Bio-section template</BioYear>
-        </BioSection> */}
-      </Section>
+      {/* # Create a Project section */}
+      
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
@@ -174,7 +154,7 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @terrnit
+                @terrnit 
               </Button>
             </Link>
           </ListItem>
@@ -185,7 +165,7 @@ const Home = () => (
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @princess_slayrr (VK)
+                @princess_slayrr (VK) 
               </Button>
             </Link>
           </ListItem>
