@@ -34,13 +34,7 @@
   "directories": {
     "doc": "doc",
     "lib": "lib"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/craftzdog/craftzdog-homepage.git"
-  },
-  "bugs": {
-    "url": "https://github.com/craftzdog/craftzdog-homepage/issues"
-  },
-  "homepage": "https://github.com/craftzdog/craftzdog-homepage#readme"
+  }
+  
+  
 }
