@@ -1,6 +1,5 @@
 import {
   Container,
-  Badge,
   Link,
   List,
   ListItem,
