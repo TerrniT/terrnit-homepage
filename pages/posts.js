@@ -56,22 +56,22 @@ const Posts = () => (
           <GridItem
             title="Social Example"
             thumbnail={thumbSocialMain}
-            href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
+            href="https://medium.com/@terrnit.megaman"
           />
           <GridItem
             title="Social Example"
             thumbnail={thumbSocialMain}
-            href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
+            href="https://medium.com/@terrnit.megaman"
           />
           <GridItem
             title="Social Example"
             thumbnail={thumbSocialMain}
-            href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
+            href="https://medium.com/@terrnit.megaman"
           />
           <GridItem
             title="Social Example"
             thumbnail={thumbSocialMain}
-            href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
+            href="https://medium.com/@terrnit.megaman"
           />
          
         </SimpleGrid>
