@@ -17,7 +17,9 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { SiVk } from "react-icons/si";
+SiVk
 import ImageNext from 'next/image'
 //import headerBackground from '../public/images/contents/header-bg.jpg'
 
@@ -156,7 +158,7 @@ const Home = () => (
             <Link href="https://github.com/terrnit" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                color={useColorModeValue("purple.400","yellow.400")}
                 leftIcon={<IoLogoGithub />}
               >
                 @terrnit 
@@ -167,10 +169,10 @@ const Home = () => (
             <Link href="https://vk.com/princess_slayrr" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                color={useColorModeValue("purple.400","yellow.400")}
+                leftIcon={<SiVk />}
               >
-                @princess_slayrr (VK) 
+                @gleb kotovsky
               </Button>
             </Link>
           </ListItem>
@@ -178,7 +180,7 @@ const Home = () => (
             <Link href="https://instagram.com/princess_slayrr" target="_blank">
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                color={useColorModeValue("purple.400","yellow.400")}
                 leftIcon={<IoLogoInstagram />}
               >
                 @princess_slayrr
@@ -206,7 +208,11 @@ const Home = () => (
 
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button 
+              rightIcon={<ChevronRightIcon />} 
+              color={useColorModeValue("white","black")}
+              bg={useColorModeValue("purple.400","yellow.400")}
+              >
               Popular posts
             </Button>
           </NextLink>
