@@ -97,7 +97,11 @@ const Home = () => (
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button 
+              rightIcon={<ChevronRightIcon />}
+              color={useColorModeValue("white","black")}
+              bg={useColorModeValue("purple.400","yellow.400")}
+              >
               My portfolio
             </Button>
           </NextLink>
@@ -109,7 +113,8 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>2003</BioYear>
+          <BioYear
+          >2003</BioYear>
           Born in Ekaterinburg
         </BioSection>
         <BioSection>
