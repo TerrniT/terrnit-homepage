@@ -10,7 +10,8 @@ import {
   ListItem,
   useColorModeValue,
   chakra,
-  Image
+  Image,
+  Text
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -57,7 +58,9 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Gleb Kotovsky
           </Heading>
-          <p>Web Developer / Designer / YouTuber</p>
+          <Text
+          color={useColorModeValue("purple.400","yellow.400")}
+          >Web Developer / Designer / YouTuber</Text>
         </Box>
         <Box
           flexShrink={0}

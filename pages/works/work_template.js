@@ -7,15 +7,17 @@ import {
   AspectRatio
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, WorkImage, Meta, CBadge } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
   <Layout title="Inkdrop">
-    <Container>
+    <Container
+      
+    >
       <Title>
-        Lorem <Badge>20xx</Badge>
+        Lorem <CBadge>20xx</CBadge>
       </Title>
       <P>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget 
@@ -25,8 +27,12 @@ const Work = () => (
       </P>
       <List ml={4} my={4}>
         <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://habr.ru">
+        <Meta
+        > Website</Meta>
+            
+          <Link
+            alignItems={"center"}
+            href="https://habr.ru">
             https://example.website.link/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
