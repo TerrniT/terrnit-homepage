@@ -7,7 +7,7 @@ const Footer = () => {
       opacity={0.4} 
       fontSize="sm"
       color="gray.200">
-      &copy; {new Date().getFullYear()} Gleb Kotovsky. All Rights Reserved.
+      &copy; {new Date().getFullYear()} Gleb Kotovský. All Rights Reserved.
     </Box>
   )
 }

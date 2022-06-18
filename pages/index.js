@@ -9,7 +9,6 @@ import {
   ListItem,
   useColorModeValue,
   chakra,
-  Image,
   Text
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -31,13 +30,7 @@ const Home = () => (
   <Layout>
     <Container>
       <Box>
-        <Image
-          src='gibbresh.png'
-          boxSize={480}
-          fallbackSrc='https://via.placeholder.com/150'
-          alt='error 404: doesnt load properly' 
-          mb={6}
-          />
+        
       </Box>
       <Box
         borderRadius="lg"
@@ -57,7 +50,7 @@ const Home = () => (
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Gleb Kotovsky
+            Gleb Kotovský
           </Heading>
           <Text
           color={useColorModeValue("purple.700","yellow.400")}
@@ -176,7 +169,7 @@ const Home = () => (
                 color={useColorModeValue("purple.700","yellow.400")}
                 leftIcon={<SiVk />}
               >
-                @gleb kotovsky
+                @Gleb Kotovský
               </Button>
             </Link>
           </ListItem>

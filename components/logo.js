@@ -30,12 +30,12 @@ const Logo = () => {
         <LogoBox>
           <Image src={footPrintImg} width={20} height={20} alt="logo" />
           <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+            color={useColorModeValue('purple.800', 'yellow.400')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="semi-bold"
             ml={3}
           >
-            TerrniT 
+            Gleb Kotovský
           </Text>
         </LogoBox>
       </a>

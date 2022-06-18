@@ -20,15 +20,15 @@ const Main = ({ children, router }) => {
         <meta name="twitter:creator" content="@terrnit" />
         <meta name="twitter:image" content="https://www.craftz.dog/card.png" />
         <meta property="og:site_name" content="Gleb Kotovsky" />
-        <meta name="og:title" content="Gleb Kotovsky" />
+        <meta name="og:title" content="Gleb Kotovský"/>
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.craftz.dog/card.png" />
-        <title>Gleb Kotovsky - Homepage</title>
+        <title>Gleb Kotovský - Homepage</title>
       </Head>
 
       <NavBar path={router.asPath} />
 
-      <Container maxW="container.md" pt={14}>
+      <Container maxW="container.md" pt={20}>
 
         {children}
 
