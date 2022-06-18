@@ -4,7 +4,6 @@ import {
   Container,
   Heading,
   Box,
-  //SimpleGrid,
   Button,
   List,
   ListItem,
@@ -45,7 +44,9 @@ const Home = () => (
         mb={6}
         p={3.5}
         textAlign="center"
-        fontSize={12}
+        fontSize={13}
+        letterSpacing={'wide'}
+      
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(15px)' }}
       >
@@ -59,7 +60,7 @@ const Home = () => (
             Gleb Kotovsky
           </Heading>
           <Text
-          color={useColorModeValue("purple.400","yellow.400")}
+          color={useColorModeValue("purple.700","yellow.400")}
           >Web Developer / Designer / YouTuber</Text>
         </Box>
         <Box
@@ -105,7 +106,7 @@ const Home = () => (
             <Button 
               rightIcon={<ChevronRightIcon />}
               color={useColorModeValue("white","black")}
-              bg={useColorModeValue("purple.400","yellow.400")}
+              bg={useColorModeValue("purple.700","yellow.400")}
               >
               My portfolio
             </Button>
@@ -161,7 +162,7 @@ const Home = () => (
             <Link href="https://github.com/terrnit" target="_blank">
               <Button
                 variant="ghost"
-                color={useColorModeValue("purple.400","yellow.400")}
+                color={useColorModeValue("purple.700","yellow.400")}
                 leftIcon={<IoLogoGithub />}
               >
                 @terrnit 
@@ -172,7 +173,7 @@ const Home = () => (
             <Link href="https://vk.com/princess_slayrr" target="_blank">
               <Button
                 variant="ghost"
-                color={useColorModeValue("purple.400","yellow.400")}
+                color={useColorModeValue("purple.700","yellow.400")}
                 leftIcon={<SiVk />}
               >
                 @gleb kotovsky
@@ -183,7 +184,7 @@ const Home = () => (
             <Link href="https://instagram.com/princess_slayrr" target="_blank">
               <Button
                 variant="ghost"
-                color={useColorModeValue("purple.400","yellow.400")}
+                color={useColorModeValue("purple.700","yellow.400")}
                 leftIcon={<IoLogoInstagram />}
               >
                 @princess_slayrr
@@ -214,7 +215,7 @@ const Home = () => (
             <Button 
               rightIcon={<ChevronRightIcon />} 
               color={useColorModeValue("white","black")}
-              bg={useColorModeValue("purple.400","yellow.400")}
+              bg={useColorModeValue("purple.700","yellow.400")}
               >
               Popular posts
             </Button>
