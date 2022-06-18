@@ -54,8 +54,9 @@ const Work = () => (
       <WorkImage src="/images/works/example.jpg" alt="Example" />
       <WorkImage src="/images/works/example.jpg" alt="Example" />
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
+      {/* embedresponsively.com - if you need embed URL for Iframe */}
         <iframe
-          src="https://www.youtube.com/embed/-qBavwqc_mY"
+          src="https://www.youtube.com/embed/8rnRnHC_RY8"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
