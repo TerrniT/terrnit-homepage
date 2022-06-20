@@ -88,11 +88,12 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Some text that i will come up with soon {' '}
-          <NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>TestLink</Link>
+          Hello, I am a self-taught programmer. 
+          In 2019, I first got acquainted with IT. I took an introductory course in Python.
+          Now my main stack is frontend web and design. {' '}
+          <NextLink href= "/works/shoko" passHref scroll={false}>
+            <Link> You can see my latest project </Link>
           </NextLink>
-          &quot;
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -118,12 +119,19 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2018</BioYear>
-          I first got acquainted with IT. I took an introductory
-          course on game development with Python
+          PyGame Dev
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
-          I study at college with a degree in programming in computer systems.
+          I study at college with a degree in programming in computer systems
+        </BioSection>
+        <BioSection>
+          <BioYear>2022</BioYear>
+          I create my pet projects. Improving my soft skills and learn how to code (a lot)
+        </BioSection>
+        <BioSection>
+          <BioYear>2023</BioYear>
+          First frontend job (going for it)
         </BioSection>
       </Section>
 
@@ -137,9 +145,9 @@ const Home = () => (
         <Paragraph>
           Coffee, Chill lo-fi hip hop music,{' '}
           <Link href="https://www.behance.net/dfe5d201" target="_blank">
-            Design
+            Design 
           </Link>
-          , Study,{' '}
+          , Study, Gym and{' '}
           <Link href="https://github.com/TerrniT" target="_blank">
             Code
           </Link>
@@ -169,7 +177,7 @@ const Home = () => (
                 color={useColorModeValue("purple.700","yellow.400")}
                 leftIcon={<SiVk />}
               >
-                @Gleb Kotovský
+                @gleb kotovský
               </Button>
             </Link>
           </ListItem>
@@ -186,24 +194,7 @@ const Home = () => (
           </ListItem>
         </List>
 
-        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;100k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid> */}
-
-        <Box align="center" my={4}>
+            <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
             <Button 
               rightIcon={<ChevronRightIcon />} 

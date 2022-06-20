@@ -11,18 +11,16 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="Inkdrop">
+  <Layout title="Shoko">
     <Container
       
     >
       <Title>
-        Lorem <CBadge>20xx</CBadge>
+        Shoko <CBadge>2022</CBadge>
       </Title>
       <P>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget 
-      pellentesque odio. Pellentesque eu dapibus dolor. Suspendisse nisi nunc, 
-      sollicitudin at ipsum sit amet, pretium imperdiet tellus. Aenean et sem non nisl 
-      mollis tempus vel at tellus. Vivamus metus ex, hendrerit eu consequat eleifend
+      Personal website design for my friends from Shoko Team. Shoko Team are funny guys. 
+      They are engaged in the development of web applications, mobile and games
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -40,8 +38,8 @@ const Work = () => (
           <span>Windows/macOS/Linux/iOS/Android</span>
         </ListItem>
         <ListItem>
-          <Meta>Stack</Meta>
-          <span>NodeJS, Electron, React</span>
+          <Meta>Design</Meta>
+          <span>Figma</span>
         </ListItem>
         <ListItem>
           <Meta>Blogpost</Meta>
@@ -51,7 +49,7 @@ const Work = () => (
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/example.jpg" alt="Example" />
+      <WorkImage src="/images/works/Shoko.jpg" alt="Example" />
       <WorkImage src="/images/works/example.jpg" alt="Example" />
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
       {/* embedresponsively.com - if you need embed URL for Iframe */}

@@ -3,22 +3,22 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbExample from '../public/images/works/example.jpg'
+import ShokoThumb from '../public/images/works/Shoko.jpg'
+import ExampleThumb from '../public/images/works/example.jpg'
 
 const Works = () => (
   <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Works
+        Latest projects
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem
-            id="work_template"
-            title="work_template"
-            thumbnail={thumbExample}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Quisque id facilisis nisl. Donec a ex odio.
+            id="shoko"
+            title="Shoko"
+            thumbnail={ShokoThumb}>
+            Corporate site for application development of the Shoko team
           </WorkGridItem>
 
         </Section>
@@ -30,11 +30,10 @@ const Works = () => (
           Collaborations
         </Heading>
         <WorkGridItem
-            id="work_template"
-            title="work_template"
-            thumbnail={thumbExample}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Quisque id facilisis nisl. Donec a ex odio.
+            id="shoko"
+            title="Shoko"
+            thumbnail={ShokoThumb}>
+            Corporate site for application development of the Shoko team
           </WorkGridItem>
       </Section>
 
@@ -42,12 +41,12 @@ const Works = () => (
       <Section delay={0.4}>
         <Divider my={6} />
         <Heading as="h3" fontSize={20} mb={4}>
-          Old works
+          Future works
         </Heading>
         <WorkGridItem
             id="work_template"
-            title="work_template"
-            thumbnail={thumbExample}>
+            title="NFT area"
+            thumbnail={ExampleThumb}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Quisque id facilisis nisl. Donec a ex odio.
           </WorkGridItem>
