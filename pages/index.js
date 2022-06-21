@@ -66,18 +66,18 @@ const Home = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w="100px"
-            h="100px"
+            w="150px"
+            h="150px"
             display="inline-block"
             borderRadius="full"
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/footprint.png"
+              src="/images/nft-yellow.jpg"
               alt="Profile image"
-              borderRadius="full"
-              width="100%"
-              height="100%"
+              width="150px"
+              height="150px"
+              
             />
           </Box>
         </Box>
