@@ -73,7 +73,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/nft-yellow.jpg"
+              src="/images/nft-yellow.png"
               alt="Profile image"
               width="150px"
               height="150px"

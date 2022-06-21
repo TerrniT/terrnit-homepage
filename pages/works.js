@@ -4,7 +4,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import ShokoThumb from '../public/images/works/Shoko.jpg'
-import ExampleThumb from '../public/images/works/example.jpg'
+// import ExampleThumb from '../public/images/works/example.jpg'
 import MyNFTArea from '../public/images/works/MyNFTArea_thumb.jpg'
 
 const Works = () => (
