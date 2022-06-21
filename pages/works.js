@@ -5,6 +5,7 @@ import { WorkGridItem } from '../components/grid-item'
 
 import ShokoThumb from '../public/images/works/Shoko.jpg'
 import ExampleThumb from '../public/images/works/example.jpg'
+import MyNFTArea from '../public/images/works/MyNFTArea_thumb.jpg'
 
 const Works = () => (
   <Layout title="Works">
@@ -45,10 +46,9 @@ const Works = () => (
         </Heading>
         <WorkGridItem
             id="work_template"
-            title="NFT area"
-            thumbnail={ExampleThumb}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Quisque id facilisis nisl. Donec a ex odio.
+            title="MyNFTArea"
+            thumbnail={MyNFTArea}>
+            Design my own NFT collection  & Build web resource / market 
           </WorkGridItem>
       </Section>
 
