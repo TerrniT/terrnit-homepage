@@ -20,8 +20,8 @@ import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import { SiVk } from "react-icons/si";
 SiVk
 import ImageNext from 'next/image'
-//import headerBackground from '../public/images/contents/header-bg.jpg'
-
+//import headerBackground from '../public/images/contents/header-bg.jpg';
+import NFTyellow from '/public/NFT-yellow.png'
 const ProfileImage = chakra(ImageNext, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
@@ -73,7 +73,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/nft-yellow.png"
+              src= {NFTyellow}
               alt="Profile image"
               width="150px"
               height="150px"
