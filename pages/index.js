@@ -9,7 +9,8 @@ import {
   ListItem,
   useColorModeValue,
   chakra,
-  Text
+  Text,
+  Code
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -39,14 +40,13 @@ const Home = () => (
         textAlign="center"
         fontSize={13}
         letterSpacing={'wide'}
-      
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(15px)' }}
       >
-        «The design is not just what it looks like. The design is how it works»
+       «The design is not just what it looks like. The design is how it works»
         @Steve Jobs
       </Box>
-
+      
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
