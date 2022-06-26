@@ -13,7 +13,7 @@ const Certification = () => (
       <Heading as="h3" fontSize={20} mb={4}>
         Collection of certificates
       </Heading>
-
+      
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem 

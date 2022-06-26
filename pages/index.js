@@ -43,8 +43,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(15px)' }}
       >
-       «The design is not just what it looks like. The design is how it works»
-        @Steve Jobs
+       <Code colorScheme= {useColorModeValue("purple","yellow")} >npm install happiness --safe</Code>
       </Box>
       
       <Box display={{ md: 'flex' }}>
