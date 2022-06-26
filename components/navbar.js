@@ -77,6 +77,9 @@ const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
+          <LinkItem href="/main" path={path}>
+            Certification
+          </LinkItem>
           <LinkItem
             target="_blank"
             href="https://github.com/terrnit/terrnit-homepage"
@@ -94,7 +97,7 @@ const Navbar = props => {
         <Box flex={1} align="right">
           <ThemeToggleButton />
           
-
+          {/* Mobile navigation  */}
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
@@ -112,6 +115,9 @@ const Navbar = props => {
                 </NextLink>
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
+                </NextLink>
+                <NextLink href="/" passHref>
+                  <MenuItem as={Link}>Certification</MenuItem>
                 </NextLink>
                 <MenuItem
                   as={Link}
