@@ -3,8 +3,8 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
-import thumbYoutubeMain from '../public/images/contents/youtube-thumb.jpg'
-import thumbSocialMain from '../public/images/contents/social-thumb.jpg'
+import thumbYoutubeMain from '../public/images/contents/spineYoutube.jpg'
+import thumbSocialMain from '../public/images/contents/medium.jpg'
 
 
 const Posts = () => (
@@ -19,29 +19,10 @@ const Posts = () => (
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="YouTube Example"
+            title="Create 3D Site with Spline and React - Full Course"
             thumbnail={thumbYoutubeMain}
-            href="https://www.youtube.com/"
+            href="https://www.youtube.com/watch?v=EJxeMbDTkVI"
           />
-          <GridItem
-            title="YouTube Example"
-            thumbnail={thumbYoutubeMain}
-            href="https://www.youtube.com/"
-          />
-          
-        </SimpleGrid>
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            title="YouTube Example"
-            thumbnail={thumbYoutubeMain}
-            href="https://www.youtube.com/"
-          />
-          <GridItem
-            title="YouTube Example"
-            thumbnail={thumbYoutubeMain}
-            href="https://www.youtube.com/"
-          />
-          
         </SimpleGrid>
       </Section>
 
@@ -54,26 +35,11 @@ const Posts = () => (
           </Heading>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="Social Example"
+            title="Ten fastest-growing apps in 2022"
             thumbnail={thumbSocialMain}
             href="https://medium.com/@terrnit.megaman"
           />
-          <GridItem
-            title="Social Example"
-            thumbnail={thumbSocialMain}
-            href="https://medium.com/@terrnit.megaman"
-          />
-          <GridItem
-            title="Social Example"
-            thumbnail={thumbSocialMain}
-            href="https://medium.com/@terrnit.megaman"
-          />
-          <GridItem
-            title="Social Example"
-            thumbnail={thumbSocialMain}
-            href="https://medium.com/@terrnit.megaman"
-          />
-         
+
         </SimpleGrid>
        
         
