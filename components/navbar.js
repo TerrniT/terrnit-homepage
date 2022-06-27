@@ -82,7 +82,7 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/terrnit/terrnit-homepage"
+            href="https://github.com/TerrniT"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -131,7 +131,7 @@ const Navbar = props => {
                 </NextLink>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/terrnit/terrnit-homepage"
+                  href="https://github.com/TerrniT"
                 >
                   View Source
                 </MenuItem>
