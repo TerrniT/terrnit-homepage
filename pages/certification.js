@@ -11,7 +11,7 @@ const Certification = () => (
   <Layout title="Certification">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Collection of certificates
+
       </Heading>
       
       <Section delay={0.1}>
@@ -19,12 +19,12 @@ const Certification = () => (
           <GridItem 
             title="Kodabra 2019" 
             thumbnail={kodabra} 
-
+            href="https://codabra.org/python/razrabotka-2d-igr-lvl1-10-14-let"
             />
           <GridItem  
             title="Russian IT 2022 Conf" 
             thumbnail={itconf2022} 
-            
+            href="https://cloud.mail.ru/public/BN7C/6k8EWXhTQ#text=600"
             />
         </SimpleGrid>
       </Section>

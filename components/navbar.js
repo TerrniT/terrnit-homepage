@@ -96,17 +96,27 @@ const Navbar = props => {
 
         <Box flex={1} align="right">
           <ThemeToggleButton />
-          
+
           {/* Mobile navigation  */}
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
+                // variant="outline"
+                // aria-label="Options"
+                transition="all 0.2s"
+                borderRadius="md"
+                borderWidth="1px"
+                
+                color={useColorModeValue("white","black")}
+                bg={useColorModeValue("purple.500","yellow.200")}
+                _focus={{ bg: 'gray.400' }}
+
               />
-              <MenuList>
+              <MenuList
+                w={15}
+              >
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
@@ -116,7 +126,7 @@ const Navbar = props => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <NextLink href="/" passHref>
+                <NextLink href="/certification" passHref>
                   <MenuItem as={Link}>Certification</MenuItem>
                 </NextLink>
                 <MenuItem
