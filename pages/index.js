@@ -21,7 +21,6 @@ import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import { SiVk } from "react-icons/si";
 SiVk
 import ImageNext from 'next/image'
-//import headerBackground from '../public/images/contents/header-bg.jpg';
 import NFTyellow from '/public/NFT-yellow.png'
 const ProfileImage = chakra(ImageNext, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -136,6 +135,27 @@ const Home = () => (
 
       {/* # Create a Project section */}
       
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+         Experience
+        </Heading>
+        <BioSection>
+          <BioYear>2+ years</BioYear>
+          C# Development
+        </BioSection>
+        <BioSection>
+          <BioYear>~1 year</BioYear>
+          HTML, CSS, JS, React
+        </BioSection>
+        <BioSection>
+          <BioYear>2 mouth</BioYear>
+            Next JS, Chakra UI, Framer motion
+        </BioSection>
+        <BioSection>
+          <BioYear>~1 year</BioYear>
+          Python GameDev
+        </BioSection>
+      </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
