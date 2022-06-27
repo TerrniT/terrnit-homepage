@@ -14,11 +14,11 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+import { BioSection, BioYear, BioSpan } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import { SiVk } from "react-icons/si";
+import { SiVk } from 'react-icons/si'
 SiVk
 import ImageNext from 'next/image'
 import NFTyellow from '/public/NFT-yellow.png'
@@ -29,9 +29,7 @@ const ProfileImage = chakra(ImageNext, {
 const Home = () => (
   <Layout>
     <Container>
-      <Box>
-        
-      </Box>
+      <Box></Box>
       <Box
         borderRadius="lg"
         mb={6}
@@ -42,17 +40,19 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(15px)' }}
       >
-       <Code colorScheme= {useColorModeValue("purple","yellow")} >npm install happiness --safe</Code>
+        <Code colorScheme={useColorModeValue('purple', 'yellow')}>
+          npm install happiness --safe
+        </Code>
       </Box>
-      
+
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Gleb Kotovský
           </Heading>
-          <Text
-          color={useColorModeValue("purple.700","yellow.400")}
-          >Web Developer / Designer / YouTuber</Text>
+          <Text color={useColorModeValue('purple.700', 'yellow.400')}>
+            Web Developer / Designer / YouTuber
+          </Text>
         </Box>
         <Box
           flexShrink={0}
@@ -71,11 +71,10 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src= {NFTyellow}
+              src={NFTyellow}
               alt="Profile image"
               width="150px"
               height="150px"
-              
             />
           </Box>
         </Box>
@@ -86,20 +85,20 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Hello, I am a self-taught programmer. 
-          In 2019, I first got acquainted with IT. I took an introductory course in Python.
-          Now my main stack is frontend web and design. {' '}
-          <NextLink href= "/works/shoko" passHref scroll={false}>
+          Hello, I am a self-taught programmer. In 2019, I first got acquainted
+          with IT. I took an introductory course in Python. Now my main stack is
+          frontend web and design.{' '}
+          <NextLink href="/works/shoko" passHref scroll={false}>
             <Link> You can see my latest project </Link>
           </NextLink>
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
-            <Button 
+            <Button
               rightIcon={<ChevronRightIcon />}
-              color={useColorModeValue("white","black")}
-              bg={useColorModeValue("purple.700","yellow.400")}
-              >
+              color={useColorModeValue('white', 'black')}
+              bg={useColorModeValue('purple.700', 'yellow.400')}
+            >
               My portfolio
             </Button>
           </NextLink>
@@ -111,8 +110,7 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear
-          >2003</BioYear>
+          <BioYear>2003</BioYear>
           Born in Ekaterinburg
         </BioSection>
         <BioSection>
@@ -120,12 +118,12 @@ const Home = () => (
           PyGame Dev
         </BioSection>
         <BioSection>
-          <BioYear>2019</BioYear>
-          I study at college with a degree in programming in computer systems
+          <BioYear>2019</BioYear>I study at college with a degree in programming
+          in computer systems
         </BioSection>
         <BioSection>
-          <BioYear>2022</BioYear>
-          I create my pet projects. Improving my soft skills and learn how to code (a lot)
+          <BioYear>2022</BioYear>I create my pet projects. Improving my soft
+          skills and learn how to code (a lot)
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
@@ -134,26 +132,26 @@ const Home = () => (
       </Section>
 
       {/* # Create a Project section */}
-      
+
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-         Experience
+        <BioYear>Experience</BioYear>
         </Heading>
         <BioSection>
-          <BioYear>2+ years</BioYear>
-          C# Development
+          <BioYear>+2 years</BioYear>
+          <BioSpan>C# Development</BioSpan>
+        </BioSection>
+        <BioSection>
+          <BioYear>~1 year </BioYear>
+          <BioSpan>HTML, CSS, JS, React</BioSpan>
+        </BioSection>
+        <BioSection>
+          <BioYear>~2 mouth</BioYear>
+          <BioSpan>Next JS, Chakra UI, Framer motion</BioSpan>
         </BioSection>
         <BioSection>
           <BioYear>~1 year</BioYear>
-          HTML, CSS, JS, React
-        </BioSection>
-        <BioSection>
-          <BioYear>2 mouth</BioYear>
-            Next JS, Chakra UI, Framer motion
-        </BioSection>
-        <BioSection>
-          <BioYear>~1 year</BioYear>
-          Python GameDev
+          <BioSpan>Python GameDev</BioSpan>
         </BioSection>
       </Section>
 
@@ -164,7 +162,7 @@ const Home = () => (
         <Paragraph>
           Coffee, Chill lo-fi hip hop music,{' '}
           <Link href="https://www.behance.net/dfe5d201" target="_blank">
-            Design 
+            Design
           </Link>
           , Study, Gym and{' '}
           <Link href="https://github.com/TerrniT" target="_blank">
@@ -182,10 +180,10 @@ const Home = () => (
             <Link href="https://github.com/terrnit" target="_blank">
               <Button
                 variant="ghost"
-                color={useColorModeValue("purple.700","yellow.400")}
+                color={useColorModeValue('purple.700', 'yellow.400')}
                 leftIcon={<IoLogoGithub />}
               >
-                @terrnit 
+                @terrnit
               </Button>
             </Link>
           </ListItem>
@@ -193,7 +191,7 @@ const Home = () => (
             <Link href="https://vk.com/princess_slayrr" target="_blank">
               <Button
                 variant="ghost"
-                color={useColorModeValue("purple.700","yellow.400")}
+                color={useColorModeValue('purple.700', 'yellow.400')}
                 leftIcon={<SiVk />}
               >
                 @gleb kotovský
@@ -204,7 +202,7 @@ const Home = () => (
             <Link href="https://instagram.com/princess_slayrr" target="_blank">
               <Button
                 variant="ghost"
-                color={useColorModeValue("purple.700","yellow.400")}
+                color={useColorModeValue('purple.700', 'yellow.400')}
                 leftIcon={<IoLogoInstagram />}
               >
                 @princess_slayrr
@@ -213,13 +211,13 @@ const Home = () => (
           </ListItem>
         </List>
 
-            <Box align="center" my={4}>
+        <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
-            <Button 
-              rightIcon={<ChevronRightIcon />} 
-              color={useColorModeValue("white","black")}
-              bg={useColorModeValue("purple.700","yellow.400")}
-              >
+            <Button
+              rightIcon={<ChevronRightIcon />}
+              color={useColorModeValue('white', 'black')}
+              bg={useColorModeValue('purple.700', 'yellow.400')}
+            >
               Popular posts
             </Button>
           </NextLink>
