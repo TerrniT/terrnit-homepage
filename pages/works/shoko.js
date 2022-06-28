@@ -50,7 +50,7 @@ const Work = () => (
       </List>
 
       <WorkImage src="/images/works/Shoko.jpg" alt="Example" />
-      <WorkImage src="/images/works/example.jpg" alt="Example" />
+      <WorkImage src="/images/works/shokoDesign.jpg" alt="Example" />
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
       {/* embedresponsively.com - if you need embed URL for Iframe */}
         <iframe
