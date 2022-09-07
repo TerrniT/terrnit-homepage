@@ -10,22 +10,37 @@ import {
   useColorModeValue,
   chakra,
   Text,
-  Code
+  Code,
+  HStack
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear, BioSpan } from '../components/bio'
+import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
+
+//Import Icons
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import { SiVk } from 'react-icons/si'
-SiVk
+import { 
+  SiNeovim, 
+  SiVk, 
+  SiJavascript, 
+  SiTailwindcss, 
+  SiCss3, 
+  SiNextdotjs, 
+  SiVisualstudiocode,
+  SiNpm,
+  SiBabel,
+  SiEslint
+} from 'react-icons/si'
+
+import { FaReact} from 'react-icons/fa'
 import ImageNext from 'next/image'
 import NFTyellow from '/public/NFT-yellow.png'
+
 const ProfileImage = chakra(ImageNext, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
-
 const Home = () => (
   <Layout>
     <Container>
@@ -40,8 +55,12 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(15px)' }}
       >
-        <Code colorScheme={useColorModeValue('purple', 'yellow')}>
-          npm install happiness --safe
+        <Code /*colorScheme={useColorModeValue('purple', 'yellow')} **/ > 
+          <HStack spacing={2}> 
+            <Text textColor={"blue.300"}>3575e87</Text>
+            <Text textColor={"green.400"}> - (2 year ago)</Text>
+            <Text>life update: it got better</Text>
+          </HStack>
         </Code>
       </Box>
 
@@ -134,25 +153,23 @@ const Home = () => (
       {/* # Create a Project section */}
 
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-        <BioYear>Experience</BioYear>
-        </Heading>
-        <BioSection>
-          <BioYear>+2 years</BioYear>
-          <BioSpan>C# Development</BioSpan>
-        </BioSection>
-        <BioSection>
-          <BioYear>~1 year </BioYear>
-          <BioSpan>HTML, CSS, JS, React</BioSpan>
-        </BioSection>
-        <BioSection>
-          <BioYear>~2 mouth</BioYear>
-          <BioSpan>Next JS, Chakra UI, Framer motion</BioSpan>
-        </BioSection>
-        <BioSection>
-          <BioYear>~1 year</BioYear>
-          <BioSpan>Python GameDev</BioSpan>
-        </BioSection>
+          <Heading as="h3" variant="section-title">
+            <BioYear>Dev Stack</BioYear>
+          </Heading>
+
+          <HStack>
+            <SiJavascript />
+            <FaReact />
+            <SiNextdotjs />
+            <SiCss3 />
+            <SiTailwindcss />
+            <SiNeovim />
+            <SiVisualstudiocode />
+            <SiNpm />
+            <SiBabel />
+            <SiEslint />
+          </HStack>
+
       </Section>
 
       <Section delay={0.3}>
