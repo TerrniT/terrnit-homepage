@@ -21,30 +21,29 @@ import Section from '../components/section'
 
 //Import Icons
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import { 
-  SiNeovim, 
-  SiVk, 
-  SiJavascript, 
-  SiTailwindcss, 
-  SiCss3, 
-  SiNextdotjs, 
+import {
+  SiNeovim,
+  SiVk,
+  SiJavascript,
+  SiTailwindcss,
+  SiCss3,
+  SiNextdotjs,
   SiVisualstudiocode,
   SiNpm,
   SiBabel,
   SiEslint
 } from 'react-icons/si'
 
-import { FaReact} from 'react-icons/fa'
+import { FaReact } from 'react-icons/fa'
 import ImageNext from 'next/image'
 import NFTyellow from '/public/NFT-yellow.png'
-
 const ProfileImage = chakra(ImageNext, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
+
 const Home = () => (
   <Layout>
     <Container>
-      <Box></Box>
       <Box
         borderRadius="lg"
         mb={6}
@@ -55,12 +54,8 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(15px)' }}
       >
-        <Code /*colorScheme={useColorModeValue('purple', 'yellow')} **/ > 
-          <HStack spacing={2}> 
-            <Text textColor={"blue.300"}>3575e87</Text>
-            <Text textColor={"green.400"}> - (2 year ago)</Text>
-            <Text>life update: it got better</Text>
-          </HStack>
+        <Code /*colorScheme={useColorModeValue('purple', 'yellow')} **/>
+          <Text>npm i happiness --save</Text>
         </Code>
       </Box>
 
@@ -153,23 +148,22 @@ const Home = () => (
       {/* # Create a Project section */}
 
       <Section delay={0.2}>
-          <Heading as="h3" variant="section-title">
-            <BioYear>Dev Stack</BioYear>
-          </Heading>
+        <Heading as="h3" variant="section-title">
+          <BioYear>Dev Stack</BioYear>
+        </Heading>
 
-          <HStack>
-            <SiJavascript />
-            <FaReact />
-            <SiNextdotjs />
-            <SiCss3 />
-            <SiTailwindcss />
-            <SiNeovim />
-            <SiVisualstudiocode />
-            <SiNpm />
-            <SiBabel />
-            <SiEslint />
-          </HStack>
-
+        <HStack>
+          <SiJavascript />
+          <FaReact />
+          <SiNextdotjs />
+          <SiCss3 />
+          <SiTailwindcss />
+          <SiNeovim />
+          <SiVisualstudiocode />
+          <SiNpm />
+          <SiBabel />
+          <SiEslint />
+        </HStack>
       </Section>
 
       <Section delay={0.3}>
