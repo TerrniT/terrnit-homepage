@@ -86,7 +86,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src={useColorModeValue('/nft-purple.png', '/NFT-yellow.png')}
+              src={useColorModeValue('/NFTblue.png', '/NFT-yellow.png')}
               alt="Profile image"
               width="150px"
               height="150px"
