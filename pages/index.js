@@ -11,15 +11,13 @@ import {
   chakra,
   Text,
   Code,
-  HStack,
-  layout
+  HStack
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { mode } from '@chakra-ui/theme-tools'
 
 //Import Icons
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
