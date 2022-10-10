@@ -11,13 +11,15 @@ import {
   chakra,
   Text,
   Code,
-  HStack
+  HStack,
+  layout
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
+import { mode } from '@chakra-ui/theme-tools'
 
 //Import Icons
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
@@ -36,9 +38,10 @@ import {
 
 import { FaReact } from 'react-icons/fa'
 import ImageNext from 'next/image'
-import NFTyellow from '/public/NFT-yellow.png'
+
+
 const ProfileImage = chakra(ImageNext, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop),
 })
 
 const Home = () => (
@@ -85,7 +88,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src={NFTyellow}
+              src={useColorModeValue('/nft-purple.png', '/NFT-yellow.png')}
               alt="Profile image"
               width="150px"
               height="150px"
