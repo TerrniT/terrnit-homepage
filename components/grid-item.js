@@ -29,10 +29,10 @@ export const PresentationGridItem = ({ src, desc, title, children }) => (
       width="480"
       height="320"
       scrolling="no" 
-      frameborder="0" 
+      frameBorder="0" 
       webkitallowfullscreen 
       mozallowfullscreen 
-      allowfullscreen>
+      allowFullScreen>
     </iframe>
     <LinkBox cursor="pointer">
         {children}
