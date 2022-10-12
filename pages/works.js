@@ -5,7 +5,6 @@ import { WorkGridItem, PresentationGridItem } from '../components/grid-item'
 
 import ShokoThumb from '../public/images/works/Shoko.jpg'
 import MyNFTArea from '../public/images/works/MyNFTArea_thumb.jpg'
-import NotFound from './404'
 
 const Works = () => (
   <Layout title="Works">
