@@ -38,13 +38,13 @@ const Work = () => (
           <span>Windows/macOS/Linux/iOS/Android</span>
         </ListItem>
         <ListItem>
-          <Meta>Design</Meta>
-          <span>Figma</span>
+          <Meta>Service</Meta>
+          <span>Design, SEO</span>
         </ListItem>
         <ListItem>
           <Meta>Vk</Meta>
           <Link href="https://vk.com/shoko.team">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<ExternalLinkIcon mx="2px" />
+            Join their group on Vkontakte<ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
@@ -52,14 +52,16 @@ const Work = () => (
       <WorkImage src="/images/works/Shoko.jpg" alt="Example" />
       <WorkImage src="/images/works/shokoDesign.jpg" alt="Example" />
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
-      {/* embedresponsively.com - if you need embed URL for Iframe */}
-        <iframe
-          src="https://www.youtube.com/embed/8rnRnHC_RY8"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/jSt2eV2HY3w?autoplay=1&amp;loop=1&amp;&amp;playlist=jSt2eV2HY3w" 
+          title="YouTube video player" 
+          frameborder="0" 
+          name="Shoko" 
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
       </AspectRatio>
     </Container>
   </Layout>
