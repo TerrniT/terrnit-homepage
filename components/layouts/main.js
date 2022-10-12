@@ -13,7 +13,7 @@ const Main = ({ children, router }) => {
         <meta name="author" content="Gleb Kotovsky" />
         <meta name="author" content="terrnit" />
         <link rel="nft-icon" href="/public/NFT.jpg" />
-        <link rel="shortcut icon" href="/NFT-yellow.ico" type="image/x-icon" />
+        <link rel="icon" href="yellow-nft-favicon.ico" />
         <meta name="twitter:title" content="Gleb Kotovsky" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@terrnit" />

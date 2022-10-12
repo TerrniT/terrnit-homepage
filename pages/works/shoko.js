@@ -49,8 +49,9 @@ const Work = () => (
         </ListItem>
       </List>
 
-      <WorkImage src="/images/works/Shoko.jpg" alt="Example" />
-      <WorkImage src="/images/works/shokoDesign.jpg" alt="Example" />
+      <WorkImage src="/images/works/Shoko.jpg" alt="Shoko" />
+      <WorkImage src="/images/works/shokoDesign.jpg" alt="ShokoDesign" />
+
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <iframe 
           width="560" 
@@ -58,6 +59,8 @@ const Work = () => (
           src="https://www.youtube.com/embed/jSt2eV2HY3w?autoplay=1&amp;loop=1&amp;&amp;playlist=jSt2eV2HY3w" 
           title="YouTube video player" 
           allow="autoplay; encrypted-media"
+          allowFullScreen
+          frameBorder="0"
         >
         </iframe>
       </AspectRatio>
