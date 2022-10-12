@@ -57,7 +57,6 @@ const Work = () => (
           height="315" 
           src="https://www.youtube.com/embed/jSt2eV2HY3w?autoplay=1&amp;loop=1&amp;&amp;playlist=jSt2eV2HY3w" 
           title="YouTube video player" 
-          frameBorder="0" 
           allow="autoplay; encrypted-media"
         >
         </iframe>
