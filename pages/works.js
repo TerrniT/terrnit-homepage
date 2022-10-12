@@ -1,7 +1,7 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Link, Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
+import { WorkGridItem, PresentationGridItem } from '../components/grid-item'
 
 import ShokoThumb from '../public/images/works/Shoko.jpg'
 import MyNFTArea from '../public/images/works/MyNFTArea_thumb.jpg'
@@ -37,6 +37,33 @@ const Works = () => (
           </WorkGridItem>
       </Section>
 
+      <Section delay={0.3}>
+        <Divider my={6} />
+        <Heading  as="h3" fontSize={20} mb={4}>
+          Presentations using{' '}
+          <Link href="https://github.com/hakimel/reveal.js" target="_blank">
+            Reveal JS
+          </Link>
+        </Heading>
+
+         <PresentationGridItem
+            title="Web Design"
+            src="https://slides.com/terrnit/web-design/embed"
+         />
+         <PresentationGridItem
+            title="CASE Tool: GIT"
+            src="https://slides.com/terrnit/deck/embed"
+         />
+         <PresentationGridItem
+            title="Linux"
+            src="https://slides.com/terrnit/code/embed"
+         />
+         <PresentationGridItem
+            title="Factory Method"
+            src="https://slides.com/terrnit/code-c9db2f/embed"
+         />
+
+      </Section>
 
       <Section delay={0.4}>
         <Divider my={6} />

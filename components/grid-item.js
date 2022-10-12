@@ -21,6 +21,26 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
+export const PresentationGridItem = ({ src, desc, title, children }) => (
+  <Box mt={5} w="100%" textAlign="center">
+    <iframe 
+      title={desc} 
+      src={src} 
+      width="480"
+      height="320"
+      scrolling="no" 
+      frameborder="0" 
+      webkitallowfullscreen 
+      mozallowfullscreen 
+      allowfullscreen>
+    </iframe>
+    <LinkBox cursor="pointer">
+        {children}
+        <Text mt={2}>{title}</Text>
+    </LinkBox>
+  </Box>
+)
+
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
     <NextLink href={`/works/${id}`} passHref scroll={false}>

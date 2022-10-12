@@ -29,8 +29,8 @@ const Work = () => (
             
           <Link
             alignItems={"center"}
-            href="https://habr.ru">
-            https://example.website.link/ <ExternalLinkIcon mx="2px" />
+            href="http://shokoteam.ru">
+            https://shokoteam.ru/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -42,8 +42,8 @@ const Work = () => (
           <span>Figma</span>
         </ListItem>
         <ListItem>
-          <Meta>Blogpost</Meta>
-          <Link href="https://habr.ru">
+          <Meta>Vk</Meta>
+          <Link href="https://vk.com/shoko.team">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.<ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
