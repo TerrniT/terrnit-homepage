@@ -5,6 +5,7 @@ import { WorkGridItem, PresentationGridItem } from '../components/grid-item'
 
 import ShokoThumb from '../public/images/works/Shoko.jpg'
 import MyNFTArea from '../public/images/works/MyNFTArea_thumb.jpg'
+import ApolloThumb from '../public/images/works/apolloThumb.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -27,13 +28,20 @@ const Works = () => (
       <Section delay={0.2}>
         <Divider my={6} />
         <Heading as="h3" fontSize={20} mb={4}>
-          Collaborations
+          Projects 
         </Heading>
         <WorkGridItem
             id="shoko"
             title="Shoko"
             thumbnail={ShokoThumb}>
             Corporate site for application development of the Shoko team
+        </WorkGridItem>
+
+        <WorkGridItem
+            id="nftarea"
+            title="MyNFTArea"
+            thumbnail={MyNFTArea}>
+            Design my own NFT collection  & Build web resource / market 
           </WorkGridItem>
       </Section>
 
@@ -72,9 +80,10 @@ const Works = () => (
         </Heading>
         <WorkGridItem
             id="work_template"
-            title="MyNFTArea"
-            thumbnail={MyNFTArea}>
-            Design my own NFT collection  & Build web resource / market 
+            title="Apollo"
+            thumbnail={ApolloThumb}>
+            To-do / markdown mobile app
+
           </WorkGridItem>
       </Section>
 

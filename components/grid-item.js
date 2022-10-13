@@ -42,7 +42,7 @@ export const PresentationGridItem = ({ src, desc, title, children }) => (
 )
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" textAlign="center">
+  <Box mb={6} w="100%" textAlign="center">
     <NextLink href={`/works/${id}`} passHref scroll={false}>
       <LinkBox cursor="pointer">
         <Image
