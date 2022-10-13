@@ -37,9 +37,8 @@ import {
 import { FaReact } from 'react-icons/fa'
 import ImageNext from 'next/image'
 
-
 const ProfileImage = chakra(ImageNext, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop),
+  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
 const Home = () => (

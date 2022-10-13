@@ -1,35 +1,23 @@
-import {
-  Container,
-  Link,
-  List,
-  ListItem,
-  AspectRatio
-} from '@chakra-ui/react'
+import { Container, Link, List, ListItem, AspectRatio } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta, CBadge } from '../../components/work'
+import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
   <Layout title="Shoko">
-    <Container
-      
-    >
+    <Container>
       <Title>
-        NFTArea <CBadge>2022</CBadge>
+        NFTArea <Meta>2022</Meta>
       </Title>
-      <P>
-       Design my own NFT collection & Build web resource / market
-      </P>
+      <P>Design my own NFT collection & Build web resource / market</P>
       <List ml={4} my={4}>
         <ListItem>
-        <Meta
-        > Website</Meta>
-            
-          <Link
-            alignItems={"center"}
-            href="https://nft-area.vercel.app">
-            https://nft-area.vercel.app<ExternalLinkIcon mx="2px" />
+          <Meta> Website</Meta>
+
+          <Link alignItems={'center'} href="https://nft-area.vercel.app">
+            https://nft-area.vercel.app
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
@@ -49,16 +37,15 @@ const Work = () => (
       <WorkImage src="/images/works/MyNFTArea_thumb.jpg" alt="NftArea" />
 
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/RdQ251eA9CIw?autoplay=1&amp;loop=1&amp;&amp;playlist=RdQ251eA9CI" 
-          title="YouTube video player" 
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/RdQ251eA9CIw?autoplay=1&amp;loop=1&amp;&amp;playlist=RdQ251eA9CI"
+          title="YouTube video player"
           allow="autoplay; encrypted-media"
           allowFullScreen
           frameBorder="0"
-        >
-        </iframe>
+        ></iframe>
       </AspectRatio>
     </Container>
   </Layout>

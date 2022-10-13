@@ -38,14 +38,3 @@ export const Meta = ({ children }) => (
     {children}
   </Badge>
 )
-
-export const CBadge = ({ children }) => (
-  <Badge
-    color={useColorModeValue('white', 'black')}
-    bg={useColorModeValue('../public/nft-purple.png', 'yellow.400')}
-    colorScheme="yellow"
-    mr={3}
-  >
-    {children}
-  </Badge>
-)

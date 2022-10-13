@@ -15,62 +15,51 @@ const Works = () => (
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem
-            id="shoko"
-            title="Shoko"
-            thumbnail={ShokoThumb}>
+          <WorkGridItem id="shoko" title="Shoko" thumbnail={ShokoThumb}>
             Corporate site for application development of the Shoko team
           </WorkGridItem>
-
         </Section>
       </SimpleGrid>
 
       <Section delay={0.2}>
         <Divider my={6} />
         <Heading as="h3" fontSize={20} mb={4}>
-          Projects 
+          Projects
         </Heading>
-        <WorkGridItem
-            id="shoko"
-            title="Shoko"
-            thumbnail={ShokoThumb}>
-            Corporate site for application development of the Shoko team
+        <WorkGridItem id="shoko" title="Shoko" thumbnail={ShokoThumb}>
+          Corporate site for application development of the Shoko team
         </WorkGridItem>
 
-        <WorkGridItem
-            id="nftarea"
-            title="MyNFTArea"
-            thumbnail={MyNFTArea}>
-            Design my own NFT collection  & Build web resource / market 
-          </WorkGridItem>
+        <WorkGridItem id="nftarea" title="MyNFTArea" thumbnail={MyNFTArea}>
+          Design my own NFT collection & Build web resource / market
+        </WorkGridItem>
       </Section>
 
       <Section delay={0.3}>
         <Divider my={6} />
-        <Heading  as="h3" fontSize={20} mb={4}>
+        <Heading as="h3" fontSize={20} mb={4}>
           Presentations using{' '}
           <Link href="https://github.com/hakimel/reveal.js" target="_blank">
             Reveal JS
           </Link>
         </Heading>
 
-         <PresentationGridItem
-            title="Web Design"
-            src="https://slides.com/terrnit/web-design/embed"
-         />
-         <PresentationGridItem
-            title="CASE Tool: GIT"
-            src="https://slides.com/terrnit/deck/embed"
-         />
-         <PresentationGridItem
-            title="Linux"
-            src="https://slides.com/terrnit/code/embed"
-         />
-         <PresentationGridItem
-            title="Factory Method"
-            src="https://slides.com/terrnit/code-c9db2f/embed"
-         />
-
+        <PresentationGridItem
+          title="Web Design"
+          src="https://slides.com/terrnit/web-design/embed"
+        />
+        <PresentationGridItem
+          title="CASE Tool: GIT"
+          src="https://slides.com/terrnit/deck/embed"
+        />
+        <PresentationGridItem
+          title="Linux"
+          src="https://slides.com/terrnit/code/embed"
+        />
+        <PresentationGridItem
+          title="Factory Method"
+          src="https://slides.com/terrnit/code-c9db2f/embed"
+        />
       </Section>
 
       <Section delay={0.4}>
@@ -78,16 +67,10 @@ const Works = () => (
         <Heading as="h3" fontSize={20} mb={4}>
           Future works
         </Heading>
-        <WorkGridItem
-            id="work_template"
-            title="Apollo"
-            thumbnail={ApolloThumb}>
-            To-do / markdown mobile app
-
-          </WorkGridItem>
+        <WorkGridItem id="work_template" title="Apollo" thumbnail={ApolloThumb}>
+          To-do / markdown mobile app
+        </WorkGridItem>
       </Section>
-
-
     </Container>
   </Layout>
 )

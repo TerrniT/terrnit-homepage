@@ -1,4 +1,4 @@
-import {  Container, Heading, SimpleGrid  } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
@@ -7,7 +7,6 @@ import thumbYoutubeMain from '../public/images/contents/spineYoutube.jpg'
 const Posts = () => (
   <Layout title="Posts">
     <Container>
-      
       <Heading as="h3" fontSize={20} mb={4}>
         YouTube
       </Heading>
@@ -21,7 +20,6 @@ const Posts = () => (
           />
         </SimpleGrid>
       </Section>
-     
     </Container>
   </Layout>
 )

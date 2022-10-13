@@ -23,20 +23,20 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 
 export const PresentationGridItem = ({ src, desc, title, children }) => (
   <Box mt={5} w="100%" textAlign="center">
-    <iframe 
-      title={desc} 
-      src={src} 
+    <iframe
+      title={desc}
+      src={src}
       width="480"
       height="320"
-      scrolling="no" 
-      frameBorder="0" 
-      webkitallowfullscreen 
-      mozallowfullscreen 
-      allowFullScreen>
-    </iframe>
+      scrolling="no"
+      frameBorder="0"
+      webkitallowfullscreen
+      mozallowfullscreen
+      allowFullScreen
+    ></iframe>
     <LinkBox cursor="pointer">
-        {children}
-        <Text mt={2}>{title}</Text>
+      {children}
+      <Text mt={2}>{title}</Text>
     </LinkBox>
   </Box>
 )
