@@ -47,10 +47,6 @@ const Works = () => (
           src="https://slides.com/terrnit/web-design/embed"
         />
         <PresentationGridItem
-          title="CASE Tool: GIT"
-          src="https://slides.com/terrnit/deck/embed"
-        />
-        <PresentationGridItem
           title="Linux"
           src="https://slides.com/terrnit/code/embed"
         />
