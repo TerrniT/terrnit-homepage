@@ -6,6 +6,7 @@ import { WorkGridItem, PresentationGridItem } from '../components/grid-item'
 import ShokoThumb from '../public/images/works/Shoko.jpg'
 import MyNFTArea from '../public/images/works/MyNFTArea_thumb.jpg'
 import ApolloThumb from '../public/images/works/apolloThumb.png'
+import TodoThumb from '../public/images/works/todoThumb.jpg'
 
 const Works = () => (
   <Layout title="Works">
@@ -32,6 +33,11 @@ const Works = () => (
 
         <WorkGridItem id="nftarea" title="MyNFTArea" thumbnail={MyNFTArea}>
           Design my own NFT collection & Build web resource / market
+        </WorkGridItem>
+
+
+        <WorkGridItem id="todo-app" title="Todo App" thumbnail={TodoThumb}>
+          Simple but usefull todo
         </WorkGridItem>
       </Section>
 
