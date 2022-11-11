@@ -35,13 +35,11 @@ const Works = () => (
         </WorkGridItem>
       </Section>
 
-      <Section delay={0.3}>
+      <Section
+        delay={0.3}>
         <Divider my={6} />
         <Heading as="h3" fontSize={20} mb={4}>
-          Presentations using{' '}
-          <Link href="https://github.com/hakimel/reveal.js" target="_blank">
-            Reveal JS
-          </Link>
+          Latest Presentations
         </Heading>
 
         <PresentationGridItem

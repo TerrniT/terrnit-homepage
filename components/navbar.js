@@ -103,8 +103,8 @@ const Navbar = props => {
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
-                // variant="outline"
-                // aria-label="Options"
+                variant="outline"
+                aria-label="Options"
                 transition="all 0.2s"
                 borderRadius="md"
                 borderWidth="1px"

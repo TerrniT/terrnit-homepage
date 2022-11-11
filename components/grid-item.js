@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
+import { Box, Text, LinkBox, LinkOverlay, Flex } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
@@ -21,13 +21,15 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
-export const PresentationGridItem = ({ src, desc, title, children }) => (
-  <Box mt={5} w="100%" textAlign="center">
+export const PresentationGridItem = ({ src, desc, children }) => (
+  <Flex mt={5}
+    width={{ base: '450', md: 'auto' }}
+    justifyContent="center" alignItems="center" textAlign="center">
     <iframe
       title={desc}
       src={src}
-      width="480"
-      height="320"
+      width="100%"
+      height="220"
       scrolling="no"
       frameBorder="0"
       webkitallowfullscreen
@@ -36,9 +38,8 @@ export const PresentationGridItem = ({ src, desc, title, children }) => (
     ></iframe>
     <LinkBox cursor="pointer">
       {children}
-      <Text mt={2}>{title}</Text>
     </LinkBox>
-  </Box>
+  </Flex>
 )
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
