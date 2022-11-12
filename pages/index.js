@@ -11,13 +11,15 @@ import {
   chakra,
   Text,
   Code,
-  HStack
+  HStack,
 } from '@chakra-ui/react'
+
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
+import IconBox from '../components/icon-box'
 
 //Import Icons
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
@@ -28,13 +30,15 @@ import {
   SiTailwindcss,
   SiCss3,
   SiNextdotjs,
-  SiVisualstudiocode,
   SiNpm,
   SiBabel,
-  SiEslint
+  SiEslint,
+  SiTypescript,
+  SiPrisma
 } from 'react-icons/si'
-
+import { DiGit } from "react-icons/di"
 import { FaReact } from 'react-icons/fa'
+
 import ImageNext from 'next/image'
 
 const ProfileImage = chakra(ImageNext, {
@@ -107,13 +111,15 @@ const Home = () => (
           </NextLink>
         </Paragraph>
         <Box align="center" my={4}>
-          <NextLink href="/works" passHref scroll={false}>
+          <NextLink download="resume_Gleb_Kotovsky.pdf" href="resume_Gleb_Kotovsky.pdf" passHref scroll={false}>
             <Button
               rightIcon={<ChevronRightIcon />}
+              mt={5}
+              p={7}
               color={useColorModeValue('white', 'black')}
               bg={useColorModeValue('purple.700', 'yellow.400')}
             >
-              My portfolio
+              Open Resume
             </Button>
           </NextLink>
         </Box>
@@ -153,17 +159,44 @@ const Home = () => (
         </Heading>
 
         <HStack>
-          <SiJavascript />
-          <FaReact />
-          <SiNextdotjs />
-          <SiCss3 />
-          <SiTailwindcss />
-          <SiNeovim />
-          <SiVisualstudiocode />
-          <SiNpm />
-          <SiBabel />
-          <SiEslint />
+          <IconBox>
+            <SiJavascript />
+          </IconBox>
+          <IconBox>
+            <FaReact />
+          </IconBox>
+          <IconBox>
+            <SiNextdotjs />
+          </IconBox>
+          <IconBox>
+            <SiTailwindcss />
+          </IconBox>
+          <IconBox>
+            <SiCss3 />
+          </IconBox>
+          <IconBox>
+            <SiNeovim />
+          </IconBox>
+          <IconBox>
+            <SiNpm />
+          </IconBox>
+          <IconBox>
+            <SiBabel />
+          </IconBox>
+          <IconBox>
+            <SiEslint />
+          </IconBox>
+          <IconBox>
+            <SiTypescript />
+          </IconBox>
+          <IconBox>
+            <DiGit />
+          </IconBox>
+          <IconBox>
+            <SiPrisma />
+          </IconBox>
         </HStack>
+
       </Section>
 
       <Section delay={0.3}>
