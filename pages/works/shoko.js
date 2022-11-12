@@ -1,4 +1,4 @@
-import { Container, Link, List, ListItem } from '@chakra-ui/react'
+import { Container, Link, List, ListItem, Tag } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
@@ -18,10 +18,10 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta> Website</Meta>
+          <Tag mt={1} size="sm" variant='solid' colorScheme='yellow'>
+            Soon
+          </Tag>
 
-          <Link alignItems={'center'} href="http://shokoteam.ru">
-            https://shokoteam.ru/ <ExternalLinkIcon mx="2px" />
-          </Link>
         </ListItem>
         <ListItem>
           <Meta>Platform</Meta>

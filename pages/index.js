@@ -111,7 +111,7 @@ const Home = () => (
           </NextLink>
         </Paragraph>
         <Box align="center" my={4}>
-          <NextLink download="resume_Gleb_Kotovsky.pdf" href="resume_Gleb_Kotovsky.pdf" passHref scroll={false}>
+          <NextLink download="resume_Gleb_Kotovsky.pdf" href="resume_Gleb_Kotovsky.pdf" passHref legacyBehavior scroll={false}>
             <Button
               rightIcon={<ChevronRightIcon />}
               mt={5}
