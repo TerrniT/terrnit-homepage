@@ -37,6 +37,7 @@ const Work = () => (
 
       <WorkImage src="/images/works/apollo-portfolio.png" alt="apollo" />
       <WorkImage src="/images/works/apollo-portfolio-zoom.png" alt="apollo_zoomed" />
+      <WorkImage src="/images/works/brandlook.png" alt="apollo-brandlook" />
 
 
     </Container>
