@@ -11,7 +11,6 @@ import {
   chakra,
   Text,
   Code,
-  HStack
 } from '@chakra-ui/react'
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
