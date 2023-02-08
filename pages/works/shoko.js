@@ -12,14 +12,17 @@ const Work = () => (
       </Title>
       <P>
         Personal website design for my friends from Shoko Team. Shoko Team are
-        funny guys. They are engaged in the development of web applications,
+        funny guys. They are engaged in the development of web application,
         mobile and games
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta> Website</Meta>
-          <Tag mt={1} size="sm" variant='solid' colorScheme='yellow'>
-            Soon
+          <Tag mt={1} size="sm" variant='solid' >
+          <Link alignItems={'center'} href="http://shokoteam.ru">
+            shokoteam.ru
+            <ExternalLinkIcon mx="2px" />
+          </Link>
           </Tag>
 
         </ListItem>
@@ -30,6 +33,10 @@ const Work = () => (
         <ListItem>
           <Meta>Service</Meta>
           <span>Design, SEO</span>
+        </ListItem>
+        <ListItem>
+          <Meta>Stack</Meta>
+          <span>React, Framer Motion</span>
         </ListItem>
         <ListItem>
           <Meta>Vk</Meta>

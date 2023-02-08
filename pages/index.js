@@ -11,7 +11,7 @@ import {
   chakra,
   Text,
   Code,
-  HStack,
+  HStack
 } from '@chakra-ui/react'
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -34,9 +34,17 @@ import {
   SiBabel,
   SiEslint,
   SiTypescript,
-  SiPrisma
+  SiPrisma,
+  SiFirebase,
+  SiSupabase,
+  SiSolidity,
+  SiWeb3Dotjs,
+  SiRedux,
+  SiThreedotjs,
+  SiReactrouter
 } from 'react-icons/si'
-import { DiGit } from "react-icons/di"
+import { BsGem } from 'react-icons/bs'
+import { DiGit } from 'react-icons/di'
 import { FaReact } from 'react-icons/fa'
 
 import ImageNext from 'next/image'
@@ -111,7 +119,13 @@ const Home = () => (
           </NextLink>
         </Paragraph>
         <Box align="center" my={4}>
-          <NextLink download="resume_Gleb_Kotovsky.pdf" href="resume_Gleb_Kotovsky.pdf" passHref legacyBehavior scroll={false}>
+          <NextLink
+            download="resume_Gleb_Kotovsky.pdf"
+            href="resume_Gleb_Kotovsky.pdf"
+            passHref
+            legacyBehavior
+            scroll={false}
+          >
             <Button
               rightIcon={<ChevronRightIcon />}
               mt={5}
@@ -142,12 +156,12 @@ const Home = () => (
           in computer systems
         </BioSection>
         <BioSection>
-          <BioYear>2022</BioYear>I create my pet projects. Improving my soft
+          <BioYear>2021</BioYear>I create my pet projects. Improving my soft
           skills and learn how to code (a lot)
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
-          First frontend job (going for it)
+          Freelancing and looking for full-time job as frontend developer
         </BioSection>
       </Section>
 
@@ -158,9 +172,12 @@ const Home = () => (
           <BioYear>Dev Stack</BioYear>
         </Heading>
 
-        <HStack>
+        <Container h={'full'}>
           <IconBox>
             <SiJavascript />
+          </IconBox>
+          <IconBox>
+            <SiTypescript />
           </IconBox>
           <IconBox>
             <FaReact />
@@ -187,16 +204,38 @@ const Home = () => (
             <SiEslint />
           </IconBox>
           <IconBox>
-            <SiTypescript />
-          </IconBox>
-          <IconBox>
             <DiGit />
           </IconBox>
           <IconBox>
             <SiPrisma />
           </IconBox>
-        </HStack>
 
+          <IconBox>
+            <SiFirebase />
+          </IconBox>
+
+          <IconBox>
+            <SiSupabase />
+          </IconBox>
+          <IconBox>
+            <SiSolidity />
+          </IconBox>
+          <IconBox>
+            <SiWeb3Dotjs />
+          </IconBox>
+          <IconBox>
+            <SiRedux />
+          </IconBox>
+          <IconBox>
+            <SiThreedotjs />
+          </IconBox>
+          <IconBox>
+            <SiReactrouter />
+          </IconBox>
+          <IconBox>
+            <BsGem />
+          </IconBox>
+        </Container>
       </Section>
 
       <Section delay={0.3}>

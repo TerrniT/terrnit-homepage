@@ -2,7 +2,7 @@ import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import thumbYoutubeMain from '../public/images/contents/spineYoutube.jpg'
+import thumbYoutubeMain from '../public/images/contents/youtube-thumb.jpg'
 
 const Posts = () => (
   <Layout title="Posts">

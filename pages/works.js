@@ -5,7 +5,8 @@ import { WorkGridItem, PresentationGridItem } from '../components/grid-item'
 
 import ShokoThumb from '../public/images/works/Shoko.jpg'
 import MyNFTArea from '../public/images/works/MyNFTArea_thumb.jpg'
-import ApolloThumb from '../public/images/works/apolloThumb.png'
+import ApolloThumb from '../public/images/works/apollo-thumb.png'
+import LastDocThumb from '../public/images/works/lastdocThumb.png'
 import TodoThumb from '../public/images/works/todoThumb.jpg'
 
 const Works = () => (
@@ -35,9 +36,12 @@ const Works = () => (
           Design my own NFT collection & Build web resource / market
         </WorkGridItem>
 
-
         <WorkGridItem id="todo-app" title="Todo App" thumbnail={TodoThumb}>
           Simple but usefull todo
+        </WorkGridItem>
+
+        <WorkGridItem id="apollo" title="Apollo" thumbnail={ApolloThumb}>
+          Markdown todo-app build in React Native
         </WorkGridItem>
       </Section>
 
@@ -53,12 +57,8 @@ const Works = () => (
           src="https://slides.com/terrnit/web-design/embed"
         />
         <PresentationGridItem
-          title="Linux"
-          src="https://slides.com/terrnit/code/embed"
-        />
-        <PresentationGridItem
           title="Factory Method"
-          src="https://slides.com/terrnit/code-c9db2f/embed"
+          src="https://slides.com/terrnit/code/embed"
         />
       </Section>
 
@@ -67,8 +67,8 @@ const Works = () => (
         <Heading as="h3" fontSize={20} mb={4}>
           Future works
         </Heading>
-        <WorkGridItem id="work_template" title="Apollo" thumbnail={ApolloThumb}>
-          To-do / markdown mobile app
+        <WorkGridItem id="work_template" title="LastDoc" thumbnail={LastDocThumb}>
+          ARM Dashboard
         </WorkGridItem>
       </Section>
     </Container>

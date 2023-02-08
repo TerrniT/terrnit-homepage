@@ -5,7 +5,7 @@ const IconBox = ({ children }) => {
   return (
     <Icon
       color={useColorModeValue('purple.700', 'yellow.400')}
-      w={8} h={8}
+      w={"48px"} h={"48px"}
     >
       {children}
     </Icon>
