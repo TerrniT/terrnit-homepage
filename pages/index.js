@@ -10,7 +10,7 @@ import {
   useColorModeValue,
   chakra,
   Text,
-  Code,
+  Code
 } from '@chakra-ui/react'
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -81,8 +81,8 @@ const Home = () => (
             Frontend Developer / Designer
           </Text>
           <Text fontSize={'small'} marginTop="2" color={'gray.500'}>
-            «It is not that I&apos;m so smart. But I stay with the questions much
-            longer.»
+            «It is not that I&apos;m so smart. But I stay with the questions
+            much longer.»
           </Text>
         </Box>
         <Box
@@ -116,14 +116,14 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          I&apos;m a self-taught React frontend developer passionate about developing
-          creative web applications. I have completed many projects in the past,
-          from simple websites to complex web applications, and I&apos;m always
-          looking for new challenges.
+          I&apos;m a self-taught React frontend developer passionate about
+          developing creative web applications. I have completed many projects
+          in the past, from simple websites to complex web applications, and
+          I&apos;m always looking for new challenges.
         </Paragraph>
         <Paragraph>
-          Currently I&apos;m interesting in web3 and blockchain, but not closed to
-          other interesting things
+          Currently I&apos;m interesting in web3 and blockchain, but not closed
+          to other interesting things
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink
@@ -164,7 +164,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2021</BioYear>I create my pet projects. Improving my soft
-          skills and learn how to code (a lot)
+          skills and hard in frontend
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
