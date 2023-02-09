@@ -11,6 +11,7 @@ import {
   chakra,
   Text,
   Code,
+  Tooltip
 } from '@chakra-ui/react'
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -23,6 +24,8 @@ import IconBox from '../components/icon-box'
 //Import Icons
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import {
+  SiWebpack,
+  SiPrettier,
   SiNeovim,
   SiVk,
   SiJavascript,
@@ -76,7 +79,11 @@ const Home = () => (
             Gleb Kotovský
           </Heading>
           <Text color={useColorModeValue('purple.700', 'yellow.400')}>
-            Web Developer / Designer / YouTuber
+            Frontend Developer / Designer
+          </Text>
+          <Text fontSize={'small'} marginTop="2" color={'gray.500'}>
+            «It is not that I'm so smart. But I stay with the questions much
+            longer.»
           </Text>
         </Box>
         <Box
@@ -110,12 +117,14 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Hello, I am a self-taught programmer. In 2019, I first got acquainted
-          with IT. I took an introductory course in Python. Now my main stack is
-          frontend web and design.{' '}
-          <NextLink href="/works/shoko" passHref scroll={false}>
-            <Link> You can see my latest project </Link>
-          </NextLink>
+          I'm a self-taught React frontend developer passionate about developing
+          creative web applications. I have completed many projects in the past,
+          from simple websites to complex web applications, and I'm always
+          looking for new challenges.
+        </Paragraph>
+        <Paragraph>
+          Currently I'm interesting in web3 and blockchain, but not closed to
+          other interesting things
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink
@@ -160,7 +169,10 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
-          Freelancing and looking for full-time job as frontend developer
+          Freelancing and looking for full-time job as frontend developer.
+          <NextLink href="/works/shoko" passHref scroll={false}>
+            <Link> You can see my latest project </Link>
+          </NextLink>
         </BioSection>
       </Section>
 
@@ -170,73 +182,83 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           <BioYear>Dev Stack</BioYear>
         </Heading>
-
         <Container h={'full'}>
-          <IconBox>
+          <IconBox label="Javascript">
             <SiJavascript />
           </IconBox>
-          <IconBox>
+          <IconBox label="Typescript">
             <SiTypescript />
           </IconBox>
-          <IconBox>
+          <IconBox label="React">
             <FaReact />
           </IconBox>
-          <IconBox>
+          <IconBox label="NextJS">
             <SiNextdotjs />
           </IconBox>
-          <IconBox>
+          <IconBox label="TailwindCSS">
             <SiTailwindcss />
           </IconBox>
-          <IconBox>
+          <IconBox label="CSS3">
             <SiCss3 />
           </IconBox>
-          <IconBox>
-            <SiNeovim />
-          </IconBox>
-          <IconBox>
-            <SiNpm />
-          </IconBox>
-          <IconBox>
-            <SiBabel />
-          </IconBox>
-          <IconBox>
-            <SiEslint />
-          </IconBox>
-          <IconBox>
-            <DiGit />
-          </IconBox>
-          <IconBox>
+          <IconBox label="Prisma">
             <SiPrisma />
           </IconBox>
-
-          <IconBox>
+          <IconBox label="Firebase">
             <SiFirebase />
           </IconBox>
-
-          <IconBox>
+          <IconBox label="Supabase">
             <SiSupabase />
           </IconBox>
-          <IconBox>
+          <IconBox label="Solidity">
             <SiSolidity />
           </IconBox>
-          <IconBox>
+          <IconBox label="WEB3">
             <SiWeb3Dotjs />
           </IconBox>
-          <IconBox>
+          <IconBox label="Redux">
             <SiRedux />
           </IconBox>
-          <IconBox>
+          <IconBox label="ThreeJS">
             <SiThreedotjs />
           </IconBox>
-          <IconBox>
+          <IconBox label="React Router">
             <SiReactrouter />
           </IconBox>
-          <IconBox>
+          <IconBox label="ZOD">
             <BsGem />
           </IconBox>
         </Container>
       </Section>
 
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          <BioYear>Tools</BioYear>
+        </Heading>
+        <Container h={'full'}>
+          <IconBox label="Neovim">
+            <SiNeovim />
+          </IconBox>
+          <IconBox label="Eslint">
+            <SiEslint />
+          </IconBox>
+          <IconBox label="Prettier">
+            <SiPrettier />
+          </IconBox>
+          <IconBox label="NPM">
+            <SiNpm />
+          </IconBox>
+          <IconBox label="Babel">
+            <SiBabel />
+          </IconBox>
+          <IconBox label="Webpack">
+            <SiWebpack />
+          </IconBox>
+          <IconBox label="GIT">
+            <DiGit />
+          </IconBox>
+        </Container>
+      </Section>
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           I really love
@@ -248,7 +270,7 @@ const Home = () => (
           </Link>
           , Study, Gym and{' '}
           <Link href="https://github.com/TerrniT" target="_blank">
-            Code
+            Code{' '}
           </Link>
         </Paragraph>
       </Section>
@@ -292,9 +314,8 @@ const Home = () => (
             </Link>
           </ListItem>
         </List>
-
         <Box align="center" my={4}>
-          <NextLink href="/posts" passHref scroll={false}>
+          <NextLink href="/404" passHref scroll={false}>
             <Button
               rightIcon={<ChevronRightIcon />}
               color={useColorModeValue('white', 'black')}
